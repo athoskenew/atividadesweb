@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		const altura = Number(prompt("Digite sua altura: "))
+
+		const sexo = Number(prompt("Digite seu sexo \n 1 - Masculino \n 2 - Feminino: "))
+
+		var calculo_imc = 0
+
+		if (sexo == 1){
+			calculo_imc = (72*altura) - 58
+		} else if (sexo == 2){
+			calculo_imc = (62*altura) - 44
+		} else{
+			calculo_imc = "Valores inseridos Inválidos"
+		}
+
+				alert(`O seu peso ideal será: ${calculo_imc.toFixed(2)}`)
+
+	</script>
+
+</body>
+</html>

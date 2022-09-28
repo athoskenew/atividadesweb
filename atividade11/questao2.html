@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		const tipo = Number(prompt("tipo de investimento \n 1 - Poupança \n 2 - Renda Fixa: "))
+
+		const valor = Number(prompt("valor do investimento R$: "))
+
+		var valor_total = 0
+
+		if (tipo == 1){
+			valor_total = valor - (valor*0.05)
+		} else if (tipo == 2){
+			valor_total = valor - (valor*0.1)
+		} else{
+			valor_total = "Valores inválidos"
+		}
+
+			alert(`O valor corrigido será R$: ${valor_total}`)
+
+	</script>
+
+</body>
+</html>

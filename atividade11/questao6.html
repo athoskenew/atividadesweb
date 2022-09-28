@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const pessoas = Number(prompt("Numero de pessoas na pescaria: "))
+
+		const peixes = Number(prompt("Numero de peixes obtidos: "))
+
+		var valor_total = 0
+
+		var peixes_extra = 0
+
+		if (peixes > pessoas){
+			peixes_extra = peixes-pessoas
+
+			valor_total = (pessoas*20) + (peixes_extra*12)
+		} else if(peixes != 0 && pessoas != 0){
+			valor_total = (pessoas*20) + (peixes_extra*12)
+		} else{
+			valor_total = "Digite valores válidos"
+			peixes_extra = "Digite valores válidos"
+		}
+
+			alert(`Foram: ${pessoas} pessoas no passeio\n
+				 A quantidade de peixes extra foram: ${peixes_extra}\n
+				 O valor total será: R$${valor_total}`)
+
+	</script>
+</body>
+</html>

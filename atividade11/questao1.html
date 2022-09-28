@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const produto = Number(prompt("Valor do produto R$: "))
+
+		const desconto = produto - (produto*0.15) //15% de desconto
+
+		var caro_barato = ""
+
+		if (desconto >= 500){
+			caro_barato = "CARO"
+		}
+		else{
+			caro_barato = "BARATO"
+		}
+
+		alert(`O produto ficou: ${desconto.toFixed(2)}\n
+			   O produto é ${caro_barato}`)
+
+	</script>
+
+</body>
+</html>

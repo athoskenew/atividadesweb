@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const nome_cliente = prompt("Nome do cliente: ")
+
+		const valor = Number(prompt("Valor do produto R$: "))
+
+		var valor_total = 0
+
+		var desconto = 0
+
+		var desc_percent = "0%"
+
+		if (valor <= 200){
+			valor_total = valor - (valor*0.1)
+			desconto = valor*0.1
+			desc_percent = "10%"
+		} else if (valor > 200 && valor <= 500){
+			valor_total = valor - (valor*0.15)
+			desconto = valor*0.15
+			desc_percent = "15%"
+		} if (valor > 500){
+			valor_total = valor - (valor*0.2)
+			desconto = valor*0.20
+			desc_percent = "20%"
+		} else{
+			valor_total = "Valores digitados são invalidos"
+			desconto = "Valores digitados são invalidos"
+			desc_percent = "Valores digitados são invalidos"
+		}
+
+				alert(`Olá ${nome_cliente}, Aqui estão os dados da compra: \n
+					Valor da compra R$: ${valor}\n
+					Valor do desconto: -${desconto} (${desc_percent})\n
+					Valor total: ${valor_total}.`)
+
+	</script>
+
+</body>
+</html>

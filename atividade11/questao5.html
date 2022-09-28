@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const centena = Number(prompt("Digite uma centena: "))
+
+		function reverso(valor) {
+		  return (
+		    parseInt(
+		      valor
+		        .toString()
+		        .split('')
+		        .reverse()
+		        .join('')
+		    ) * Math.sign(valor)
+		  )                 
+		}
+
+		if (centena > 99){
+			alert(`Valor invertido: ${reverso(centena)}`)
+		} else{
+			alert(`Digite um valor válido.`)
+		}
+	</script>
+
+</body>
+</html>
