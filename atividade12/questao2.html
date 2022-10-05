@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//questao2.js
+
+var selecionador = 's'
+
+var preco_total = 0
+
+while (selecionador !== 'n'){
+
+	var produto = Number(prompt("Digite o preço do produto: "))
+	var select = prompt("Continuar adicionando valores? (s/n): ")
+
+	preco_total += produto
+
+	if (select === 'n'){
+		selecionador = 'n'
+	}
+
+}
+
+var dinheiro_cliente = Number(prompt("Digite o valor pago pelo cliente: "))
+
+alert(`O troco será R$: ${(dinheiro_cliente-preco_total)}`)
+
+
+	</script>
+
+</body>
+</html>
